@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Campus Crush</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+        body{
+            font-family: "Poppins";
+        }
+        .bold-text{
+            font-weight: bold;
+        }
+        .input-field input:focus{
+            border-bottom: 1px solid #f06292 !important;
+            box-shadow: 0 1px 0 0 #f06292 !important;
+        }
+        .input-field .prefix.active, label.active{
+            color: #f06292 !important;
+        }
+        .curvacious{
+            border-radius: 10px;
+            transition: all .9s;
+        }
+        .curvacious:hover{
+            background-color: #c2185b  !important;
+            border-radius: 0px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="white z-depth-0">
+            <div class="nav-wrapper valign-wrapper">
+                <a href="./index.html" class="brand-logo"><img src="./images/logo.png" style="max-width: 80px;"></a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="container center section">
+            <div class="row">
+                <div class="col s12">
+                    <img src="./images/main-logo.png" style="max-width: 250px;" class="responsive-img">
+                </div>
+                <div class="col s12">
+                    <h3 class="black-text bold-text">Campus <span class="pink-text text-lighten-2">Crush</span></h3>
+                    <h4 class="bold-text">Login</h4>
+                    <form action="">
+                        <div class="row">
+                            <div class="col s12 input-field">
+                                <label for="username">Enter your <span class="pink-text text-lighten-2 bold-text login"></span></label>
+                                <input type="text" id="username">
+                            </div>
+                            <div class="col s12 input-field">
+                                <label for="password">Enter your <span class="pink-text text-lighten-2 bold-text">Password</span></label>
+                                <input type="password" id="password">
+                            </div>
+                            <div class="col s12 input-field">
+                                <button class="btn btn-large pink lighten-2 white-text curvacious" style="width: 100%;">Login</button>
+                            </div>
+                            <p class="center black-text">Don't have an account?<a href="#" class="pink-text text-lighten-2"> Sign Up</a></p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="page-footer white">
+        <h5 class="pink-text text-lighten-2 center bold-text">#Loveinsession</h5>
+        <h6 class="pink-text text-lighten-2 center bold-text">&copy; 2024 Campus Crush</h6>
+    </footer>
+    <script src="./JS/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        let typed = new Typed(".login",{
+            strings : ["Username", "Phone Number", "Email"],
+            typeSpeed : 100,
+            backSpeed : 50,
+            backDelay : 2000,
+            loop : true,
+        })
+    </script>
+</body>
+</html>

@@ -5,11 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <title>Campus Crush</title>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
         body{
-            font-family: "Poppins";
+            font-family: "Patrick Hand";
+            background-image: url(./images/background.png);
+            background-position: center;
+            background-size: cover;
+        }
+        .container{
+            margin-bottom: 100px !important;
         }
         .bold-text{
             font-weight: bold;
@@ -22,12 +29,22 @@
             color: #f06292 !important;
         }
         .curvacious{
-            border-radius: 10px;
+            border-radius: 20px;
             transition: all .9s;
         }
         .curvacious:hover{
             background-color: #c2185b  !important;
             border-radius: 0px;
+        }
+        .long-text{
+            font-size: 1.4rem;
+        }
+        .card{
+            display: flex !important;
+            flex-direction: column !important;
+            justify-content: center !important;
+            align-items: center !important;
+            height: 200px !important;
         }
     </style>
 </head>
@@ -39,41 +56,135 @@
             </div>
         </nav>
     </header>
+    <div class="slider" style="margin-bottom: 100px;">
+        <ul class="slides">
+            <li>
+                <img src="./images/loveinsession.png">
+            </li>
+        </ul>
+    </div>
     <main>
-        <div class="container center section">
+        <div class="container center">
             <div class="row">
                 <div class="col s12">
-                    <img src="./images/main-logo.png" style="max-width: 250px;" class="responsive-img">
+                    <img src="./images/logo2.png" style="max-width: 250px;" class="responsive-img">
+                    <h3 class="black-text" style="margin-top: -40px;">Campus Crush</h3>
+                    <button class="btn btn-large pink lighten-2 black-text bold-text curvacious" style="width: 100%;">Join the waitlist</button>
                 </div>
+            </div>
+        </div>
+        <div class="container center">
+            <div class="row">
                 <div class="col s12">
-                    <h3 class="black-text bold-text">Campus <span class="pink-text text-lighten-2">Crush</span></h3>
-                    <h4 class="bold-text">Login</h4>
-                    <form action="">
-                        <div class="row">
-                            <div class="col s12 input-field">
-                                <label for="username">Enter your <span class="pink-text text-lighten-2 bold-text login"></span></label>
-                                <input type="text" id="username">
+                    <h3 class="pink-text text-lighten-2 bold-text"><span class="black-text">What is</span> Campus Crush?</h3>
+                    <p class="black-text long-text"><span class="pink-text text-lighten-2">Campus Crush</span> is a dating app designed for Nigerian University Students. <span class="pink-text text-lighten-2">#Loveinsession</span> is more than a slogan --its our commitment to bringing you closer to finding your crush with <span class="pink-text text-lighten-2">safe</span>, <span class="pink-text text-lighten-2">fun</span> and <span class="pink-text text-lighten-2">personalised</span> connections</p>
+                </div>
+            </div>
+        </div>
+        <div class="container center">
+            <div class="row">
+                <div class="col s12 center">
+                    <h3 class="pink-text text-lighten-2 bold-text"><span class="black-text">Why Choose</span> Campus Crush?</h3>
+                    <div class="row">
+                        <div class="col s6 l4 center">
+                            <div class="card z-depth-0 transparent ">
+                                <div class="card-image ">
+                                    <img src="./images/customizable.png" style="max-width: 80px;" class="center">
+                                </div>
+                                <div class="card-content">
+                                    <h6 class="pink-text bold-text text-lighten-2">Customizable Profiles</h6>
+                                </div>
                             </div>
-                            <div class="col s12 input-field">
-                                <label for="password">Enter your <span class="pink-text text-lighten-2 bold-text">Password</span></label>
-                                <input type="password" id="password">
-                            </div>
-                            <div class="col s12 input-field">
-                                <button class="btn btn-large pink lighten-2 white-text curvacious" style="width: 100%;">Login</button>
-                            </div>
-                            <p class="center black-text">Don't have an account?<a href="#" class="pink-text text-lighten-2"> Sign Up</a></p>
                         </div>
-                    </form>
+                        <div class="col s6 l4 center">
+                            <div class="card z-depth-0 transparent">
+                                <div class="card-image ">
+                                    <img src="./images/customizable.png" style="max-width: 80px;" class="center">
+                                </div>
+                                <div class="card-content">
+                                    <h6 class="pink-text bold-text text-lighten-2">Internal and external dating feature</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col s6 l4 center">
+                            <div class="card z-depth-0 transparent">
+                                <div class="card-image ">
+                                    <img src="./images/verified.png" style="max-width: 80px;" class="center">
+                                </div>
+                                <div class="card-content">
+                                    <h6 class="pink-text bold-text text-lighten-2">Verified Connections</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col s6 l4 center">
+                            <div class="card z-depth-0 transparent">
+                                <div class="card-image ">
+                                    <img src="./images/events.png" style="max-width: 80px;" class="center">
+                                </div>
+                                <div class="card-content">
+                                    <h6 class="pink-text bold-text text-lighten-2">Early access to event tickets</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col s6 l4 center">
+                            <div class="card z-depth-0 transparent">
+                                <div class="card-image ">
+                                    <img src="./images/location.png" style="max-width: 80px;" class="center">
+                                </div>
+                                <div class="card-content">
+                                    <h6 class="pink-text bold-text text-lighten-2">Plan hangouts and dates in-app</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col s6 l4 center">
+                            <div class="card z-depth-0 transparent">
+                                <div class="card-image ">
+                                    <img src="./images/game.png" style="max-width: 80px;" class="center">
+                                </div>
+                                <div class="card-content">
+                                    <h6 class="pink-text bold-text text-lighten-2">Exciting chat games to break the ice</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container center">
+            <div class="row">
+                <div class="col s12">
+                    <h3>Excited?!</h3>
+                    <button class="btn btn-large pink lighten-2 black-text bold-text curvacious" style="width: 100%;">Join the waitlist</button>
+                    <p class="long-text">Be the first to know once we go live</p>
                 </div>
             </div>
         </div>
     </main>
-    <footer class="page-footer white">
-        <h5 class="pink-text text-lighten-2 center bold-text">#Loveinsession</h5>
-        <h6 class="pink-text text-lighten-2 center bold-text">&copy; 2024 Campus Crush</h6>
+    <footer class="page-footer transparent">
+        <div class="container center" style="margin-bottom: -100px !important;">
+            <div class="row">
+                <div class="col s12" style="margin-bottom: -30px;">
+                    <i class='bx bxl-instagram' style="color: #f06292; font-size: 4em;"></i>
+                    <i class='bx bxl-twitter'  style="color: #f06292; font-size: 4em;"></i>
+                    <i class='bx bxl-snapchat' style="color: #f06292; font-size: 4em;"></i>
+                    <i class='bx bxl-youtube' style="color: #f06292; font-size: 4em;"></i>
+                </div>
+            </div>
+            <div class="footer-copyright transparent">
+                <div class="container center" style="margin-bottom: 0px !important;">
+                    <h6 class="pink-text text-lighten-2 bold-text">&copy;2024 Campus Crush</h6>
+                </div>
+            </div>
+        </div>
     </footer>
     <script src="./JS/jquery.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+        $('.slider').slider({
+                height: 500,
+                indicators: false,
+            });
+    </script>
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script>
         let typed = new Typed(".login",{

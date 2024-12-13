@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Campus Crush</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+        body{
+            font-family: "Patrick Hand";
+            /* background-image: url(./images/background.png);
+            background-position: center;
+            background-size: cover; */
+        }
+        .container{
+            margin-bottom: 100px !important;
+        }
+        .bold-text{
+            font-weight: bold;
+        }
+        .input-field input:focus{
+            border-bottom: 1px solid #f06292 !important;
+            box-shadow: 0 1px 0 0 #f06292 !important;
+        }
+        .input-field .prefix.active, label.active{
+            color: #f06292 !important;
+        }
+        .curvacious{
+            border-radius: 20px;
+            transition: all .9s;
+        }
+        .curvacious:hover{
+            background-color: #c2185b  !important;
+        }
+        .long-text{
+            font-size: 1.4rem;
+        }
+        .card{
+            display: flex !important;
+            flex-direction: column !important;
+            justify-content: center !important;
+            align-items: center !important;
+            height: 200px !important;
+        }
+        .greyy{
+            color: rgb(90, 90, 90);
+        }
+        ::-webkit-scrollbar{
+            width: 12px;
+            background: black;
+        }
+        ::-webkit-scrollbar-thumb{
+            background: linear-gradient(transparent, #f06292);
+            border-radius: 10px;
+            height: 120px;
+            transition: all .5s;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="white z-depth-0">
+            <div class="nav-wrapper valign-wrapper">
+                <a href="./index.html" class="brand-logo"><img src="./images/logo.png" style="max-width: 80px;"></a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <div class="row">
+                <div class="col s12 center">
+                    <h2>Username</h2>
+                    <img src="./images/logo2.png" style="max-width: 250px; margin-top: -70px;">
+                    <h3 style="margin-top: -50px;">Jae Osama</h3>
+                    <p class="long-text greyy" style="margin-top: -20px;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad, odit?</p>
+                </div>
+                <div class="col s12">
+                    <div class="row center">
+                        <div class="col s6">
+                            <a href="edit_profile.html" class="btn btn-large pink lighten-2 black-text curvacious" style="width: 100%;">Edit Profile</a>
+                        </div>
+                        <div class="col s6">
+                            <a href="edit_profile.html" class="btn btn-large pink lighten-2 black-text curvacious" style="width: 100%;">Share Profile</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 center">
+                    <h3>Add Images</h3>
+                    <div class="row">
+                        <div class="col s4">
+                            <div class="card z-depth-0" style="border: 3px solid #f06292;">
+                                <div class="card-content">
+                                    <i class="material-icons greyy" style="margin-left: -2px; margin-top: -2px;">add_a_photo</i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col s4">
+                            <div class="card z-depth-0" style="border: 3px solid #f06292;">
+                                <div class="card-content">
+                                    <i class="material-icons greyy" style="margin-left: -2px; margin-top: -2px;">add_a_photo</i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col s4">
+                            <div class="card z-depth-0" style="border: 3px solid #f06292;">
+                                <div class="card-content">
+                                    <i class="material-icons greyy" style="margin-left: -2px; margin-top: -2px;">add_a_photo</i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 center">
+                    <a href="" class="btn btn-large btn-floating white greyy" style="border: 3px solid #f06292;"><i class="material-icons grey-text" style="margin-left: -2px; margin-top: -2px;">add</i></a>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="page-footer transparent" style="margin-top: -100px;">
+        <div class="container center" style="margin-bottom: -100px !important;">
+            <div class="row">
+                <div class="col s12" style="margin-bottom: -30px;">
+                    <img src="./images/logo2.png" style="max-width: 100px;">
+                </div>
+            </div>
+            <div class="footer-copyright transparent">
+                <div class="container center" style="margin-bottom: 0px !important;">
+                    <h6 class="pink-text text-lighten-2 bold-text">&copy;2024 Campus Crush</h6>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="./JS/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+        $('.slider').slider({
+                height: 500,
+                indicators: false,
+            });
+    </script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        let typed = new Typed(".login",{
+            strings : ["Username", "Phone Number", "Email"],
+            typeSpeed : 100,
+            backSpeed : 50,
+            backDelay : 2000,
+            loop : true,
+        })
+    </script>
+</body>
+</html>

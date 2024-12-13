@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Campus Crush</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+        body{
+            font-family: "Patrick Hand";
+            /* background-image: url(./images/background.png);
+            background-position: center;
+            background-size: cover; */
+        }
+        .container{
+            margin-bottom: 100px !important;
+        }
+        .bold-text{
+            font-weight: bold;
+        }
+        .input-field input:focus{
+            border-bottom: 1px solid #f06292 !important;
+            box-shadow: 0 1px 0 0 #f06292 !important;
+        }
+        .input-field .prefix.active, label.active{
+            color: #f06292 !important;
+        }
+        .curvacious{
+            border-radius: 20px;
+            transition: all .9s;
+        }
+        .curvacious:hover{
+            background-color: #c2185b  !important;
+        }
+        .long-text{
+            font-size: 1.4rem;
+        }
+        .card{
+            display: flex !important;
+            flex-direction: column !important;
+            justify-content: center !important;
+            align-items: center !important;
+            height: 200px !important;
+        }
+        .greyy{
+            color: rgb(90, 90, 90);
+        }
+        ::-webkit-scrollbar{
+            width: 12px;
+            background: black;
+        }
+        ::-webkit-scrollbar-thumb{
+            background: linear-gradient(transparent, #f06292);
+            border-radius: 10px;
+            height: 120px;
+            transition: all .5s;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="white z-depth-0">
+            <div class="nav-wrapper valign-wrapper">
+                <a href="./index.html" class="brand-logo"><img src="./images/logo.png" style="max-width: 80px;"></a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <div class="row">
+                <h2 class="center">Inbox</h2>
+                <div class="col s12">
+                    <form action="">
+                        <div class="row">
+                            <div class="col s12 input-field">
+                                <label for="search" class="black-text">Search <span class="search pink-text text-lighten-2"></span></label>
+                                <input type="text" id="search">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="col s12">
+                    <ul class="collection">
+                        <li class="collection-item avatar">
+                            <i class="material-icons circle pink-text text-lighten-2" style="font-size: 2.5rem;">person</i>
+                            <span class="title">Dennis</span>
+                            <p class="greyy">Sent 32m ago</p>
+                            <p class="long-text">Where are you rn br...</p>
+                            <a href="#" class="secondary-content"><i class="material-icons pink-text text-lighten-2">favorite</i></a>
+                        </li>
+                        <li class="collection-item avatar">
+                            <i class="material-icons circle pink-text text-lighten-2" style="font-size: 2.5rem;">person</i>
+                            <span class="title">Joy</span>
+                            <p class="greyy">Last seen 12:38</p>
+                            <p class="long-text">I need you😭😭😭</p>
+                            <a href="#" class="secondary-content"><i class="material-icons pink-text text-lighten-2">favorite</i></a>
+                        </li>
+                        <li class="collection-item avatar">
+                            <i class="material-icons circle pink-text text-lighten-2" style="font-size: 2.5rem;">person</i>
+                            <span class="title">Mary</span>
+                            <p class="greyy">Last seen 9:56</p>
+                            <p class="long-text">I've never heard tha...</p>
+                            <a href="#" class="secondary-content"><i class="material-icons pink-text text-lighten-2">favorite</i></a>
+                        </li>
+                        <li class="collection-item avatar">
+                            <i class="material-icons circle pink-text text-lighten-2" style="font-size: 2.5rem;">person</i>
+                            <span class="title">Festus</span>
+                            <p class="greyy">Sent 2hr ago</p>
+                            <p class="long-text">Guy that walk was so c...</p>
+                            <a href="#" class="secondary-content"><i class="material-icons pink-text text-lighten-2">favorite</i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="page-footer transparent" style="margin-top: -100px;">
+        <div class="container center" style="margin-bottom: -100px !important;">
+            <div class="row">
+                <div class="col s12" style="margin-bottom: -30px;">
+                    <img src="./images/logo2.png" style="max-width: 100px;">
+                </div>
+            </div>
+            <div class="footer-copyright transparent">
+                <div class="container center" style="margin-bottom: 0px !important;">
+                    <h6 class="pink-text text-lighten-2 bold-text">&copy;2024 Campus Crush</h6>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="./JS/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+        $('.slider').slider({
+                height: 500,
+                indicators: false,
+            });
+    </script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        let typed = new Typed(".search",{
+            strings : ["Name", "Number", "Code"],
+            typeSpeed : 100,
+            backSpeed : 50,
+            backDelay : 2000,
+            loop : true,
+        })
+    </script>
+</body>
+</html>
